@@ -1,4 +1,4 @@
-Recent advances in the estimation of heterogenous causal effects build on supervised machine learning methods that have  been traditionally used for predictive tasks. Assuming unconfoundedness, we estimate and compare 4 different models. Each model in implemeted in a dedicated notebook.  
+Recent advances in the estimation of heterogeneous causal effects build on supervised machine learning methods that have  been traditionally used for predictive tasks. Assuming unconfoundedness, we estimate and compare 4 different models. Each model is implemented in a dedicated notebook.  
 
 
 Project overview:
@@ -7,8 +7,8 @@ Project overview:
 
 Under the assumption of unconfoundedness, it is possible to estimate unbiased causal effects of a policy intervention (in our case a Bilateral Investment Agreement) by taking in consideration selection into treatment. Double Machine Learning models consists of 3 main steps:
 
-1. Prediction of the presence of a BIT between two countries using a set of socio economic characterisitcs
-2. Prediction of the FDI flows between the two countries using a set of sociao economic characteristics
+1. Prediction of the presence of a BIT between two countries using a set of socio economic characteristics
+2. Prediction of the FDI flows between the two countries using a set of social economic characteristics
 3. Estimation of the causal effect of the BIT on FDI flows, making use of the difference between the predicted values of the first two steps and their respective observed values.
 
 For **Model 1** and **Model 2**, the first two steps are identical, and estimated using a RandomForestClassifier and a RandomForestRegression model, respectively. The two models differ in the third step:
